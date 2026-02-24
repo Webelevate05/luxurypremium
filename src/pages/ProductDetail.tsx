@@ -193,7 +193,7 @@ export default function ProductDetail() {
                   </div>
 
                   <div className="relative group">
-                    <label className="block text-[9px] tracking-[0.4em] uppercase font-bold mb-3 opacity-40 transition-opacity group-focus-within:opacity-100">Bespoke Delivery Address</label>
+                    <label className="block text-[9px] tracking-[0.4em] uppercase font-bold mb-3 opacity-40 transition-opacity group-focus-within:opacity-100">Delivery Address</label>
                     <textarea
                       required
                       placeholder="MAYFAIR, LONDON..."

@@ -41,7 +41,7 @@ export default function Contact() {
                 transition={{ duration: 1, delay: 0.4 }}
                 className="text-brand-muted max-w-lg text-xl font-light leading-relaxed"
               >
-                Our boutiques and ateliers remain at your disposal for bespoke silhouette design and collection inquiries.
+                Our boutiques and ateliers remain at your disposal for silhouette design and collection inquiries.
               </motion.p>
             </header>
 
@@ -154,7 +154,6 @@ export default function Contact() {
                     <div className="group relative">
                       <label className="text-[9px] tracking-[0.4em] uppercase font-bold opacity-30 group-focus-within:opacity-100 transition-opacity mb-4 block">Nature of Inquiry</label>
                       <select className="w-full border-b border-brand-border pb-4 text-sm font-light tracking-widest focus:outline-none focus:border-brand-accent transition-all duration-500 bg-white appearance-none uppercase cursor-pointer">
-                        <option>BESPOKE CONSULTATION</option>
                         <option>COLLECTION INQUIRY</option>
                         <option>PRIVATE FITTING</option>
                         <option>PRESS & MEDIA</option>

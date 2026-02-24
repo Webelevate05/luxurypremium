@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   const featuredDresses = DRESSES.slice(0, 3);
-  const luxuryTerms = ["Exquisite", "Architectural", "Sustainable", "Bespoke", "Timeless", "Ethereal", "Sophisticated"];
+  const luxuryTerms = ["Exquisite", "Architectural", "Sustainable", "Timeless", "Ethereal", "Sophisticated"];
 
   return (
     <div className="overflow-hidden">
@@ -122,61 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bespoke Impact Section */}
-      <section className="relative min-h-[90vh] flex items-center px-6 md:px-12 py-32 overflow-hidden bg-brand-ink">
-        <div className="absolute inset-0 opacity-40 grayscale">
-          <img
-            src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=2069&auto=format&fit=crop"
-            alt="Bespoke Experience"
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-ink via-brand-ink/60 to-transparent" />
 
-        <div className="relative z-10 max-w-3xl text-white">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-brand-accent text-[10px] tracking-[0.5em] uppercase font-bold mb-8 block"
-          >
-            An Exclusive Invitation
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="text-6xl md:text-[6rem] font-serif font-light leading-[0.9] mb-12"
-          >
-            Tailored to <br />
-            <span className="italic">Perfection</span>
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="text-xl mb-16 opacity-70 font-light leading-relaxed max-w-xl"
-          >
-            From initial sketch to final stitch, our private ateliers bring your vision to life. Experience luxury that is made only for you.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <Link
-              to="/contact"
-              className="inline-block bg-brand-accent text-white px-16 py-6 text-[10px] tracking-[0.4em] font-bold hover:bg-white hover:text-brand-ink transition-all duration-700 uppercase"
-            >
-              Order Bespoke
-            </Link>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       <section className="py-48 px-6 md:px-12 bg-brand-bg">

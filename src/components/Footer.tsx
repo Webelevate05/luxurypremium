@@ -29,8 +29,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-light">
               <li><Link to="/" className="hover:text-brand-accent transition-colors">Home</Link></li>
               <li><Link to="/dresses" className="hover:text-brand-accent transition-colors">All Pieces</Link></li>
-              <li><Link to="/contact" className="hover:text-brand-accent transition-colors">Ateliers</Link></li>
-              <li><Link to="/contact" className="hover:text-brand-accent transition-colors">Bespoke</Link></li>
+              <li><Link to="/contact" className="hover:text-brand-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -45,23 +44,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter / CTA */}
-          <div className="lg:col-span-3 space-y-8">
-            <h4 className="text-[10px] tracking-[0.4em] uppercase font-bold text-brand-ink/40">The Journal</h4>
-            <div className="space-y-6">
-              <p className="text-sm font-light opacity-60">Subscribe to receive private invitations and collection previews.</p>
-              <div className="relative group">
-                <input
-                  type="email"
-                  placeholder="EMAIL ADDRESS"
-                  className="w-full bg-transparent border-b border-brand-border py-2 text-[10px] tracking-widest focus:outline-none focus:border-brand-accent transition-colors placeholder:opacity-30"
-                />
-                <button className="absolute right-0 bottom-2 text-[10px] font-bold tracking-[0.2em] transform group-focus-within:translate-x-0 opacity-0 group-focus-within:opacity-100 transition-all duration-500">
-                  SUBSCRIBE
-                </button>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         <div className="pt-16 border-t border-brand-border flex flex-col md:flex-row justify-between items-center gap-8">

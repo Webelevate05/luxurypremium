@@ -22,8 +22,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'COLLECTION', path: '/dresses' },
-    { name: 'BESPOKE', path: '/contact' },
-    { name: 'JOURNAL', path: '#' },
   ];
 
   return (
@@ -54,9 +52,9 @@ export default function Navbar() {
           ))}
           <Link
             to="/contact"
-            className="ml-4 border border-brand-ink/20 px-6 py-2 text-[10px] tracking-[0.3em] hover:bg-brand-ink hover:text-brand-bg transition-all duration-500 uppercase"
+            className="ml-4 border border-brand-ink/20 px-6 py-2 text-[10px] tracking-[0.3em] hover:bg-brand-ink hover:text-brand-bg transition-all duration-500 uppercase font-bold"
           >
-            Reserved
+            CONTACT US
           </Link>
         </div>
 
