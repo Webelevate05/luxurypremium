@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+
+  --color-brand-bg: #fcfbf7;
+  --color-brand-ink: #121212;
+  --color-brand-muted: rgba(18, 18, 18, 0.6);
+  --color-brand-border: rgba(18, 18, 18, 0.08);
+  --color-brand-accent: #c5a368;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-bg text-brand-ink font-sans antialiased selection:bg-brand-accent selection:text-white cursor-none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+.luxury-underline {
+  @apply relative inline-block;
+}
+
+.luxury-underline::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-700 ease-out;
+}
+
+.luxury-underline:hover::after {
+  @apply w-full;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-xl border border-white/20;
+}
+
+#custom-cursor {
+  @apply fixed top-0 left-0 w-8 h-8 rounded-full border border-brand-ink/30 pointer-events-none z-[9999] mix-blend-difference flex items-center justify-center transition-transform duration-300 ease-out;
+}
+
+#custom-cursor-dot {
+  @apply w-1 h-1 bg-brand-accent rounded-full;
+}
+
+.cursor-hover {
+  @apply scale-[2.5] bg-brand-ink/10 border-transparent;
+}
