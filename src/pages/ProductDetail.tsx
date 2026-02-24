@@ -204,6 +204,27 @@ export default function ProductDetail() {
                     />
                   </div>
 
+                  <div className="relative group">
+                    <label className="block text-[9px] tracking-[0.4em] uppercase font-bold mb-3 opacity-40 transition-opacity group-focus-within:opacity-100">Quantity</label>
+                    <div className="flex items-center space-x-8 border-b border-brand-border pb-4">
+                      <button
+                        type="button"
+                        onClick={() => setFormData({ ...formData, quantity: Math.max(1, formData.quantity - 1) })}
+                        className="text-xl font-light hover:text-brand-accent transition-colors px-2"
+                      >
+                        —
+                      </button>
+                      <span className="text-sm font-light tracking-widest w-8 text-center">{formData.quantity}</span>
+                      <button
+                        type="button"
+                        onClick={() => setFormData({ ...formData, quantity: formData.quantity + 1 })}
+                        className="text-xl font-light hover:text-brand-accent transition-colors px-2"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
                   <button
                     type="submit"
                     className="w-full bg-brand-ink text-white py-6 text-[10px] tracking-[0.5em] font-bold uppercase hover:bg-brand-accent transition-all duration-700 mt-8 shadow-2xl shadow-brand-ink/10"

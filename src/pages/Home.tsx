@@ -14,9 +14,9 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center px-6">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=2070&auto=format&fit=crop"
             alt="Hero Background"
-            className="w-full h-full object-cover opacity-30 grayscale saturate-0"
+            className="w-full h-full object-cover opacity-40 grayscale saturate-0"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-brand-bg via-transparent to-brand-bg" />
@@ -126,7 +126,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center px-6 md:px-12 py-32 overflow-hidden bg-brand-ink">
         <div className="absolute inset-0 opacity-40 grayscale">
           <img
-            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=2069&auto=format&fit=crop"
             alt="Bespoke Experience"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

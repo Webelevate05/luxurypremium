@@ -182,9 +182,9 @@ export default function Contact() {
               </AnimatePresence>
             </div>
 
-            <div className="mt-12 opacity-40">
+            <div className="mt-12 opacity-60">
               <img
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop"
                 alt="Studio"
                 className="w-full aspect-video object-cover grayscale"
               />

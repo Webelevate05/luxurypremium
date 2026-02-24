@@ -79,7 +79,7 @@ export default function Dresses() {
           </div>
           <div className="aspect-[16/9] bg-brand-ink/5 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=2070&auto=format&fit=crop"
               alt="Process"
               className="w-full h-full object-cover opacity-60 grayscale"
             />
